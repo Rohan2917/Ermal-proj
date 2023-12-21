@@ -1,0 +1,480 @@
+/* button background  */
+.btn-background {
+  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%);
+}
+/* Brain Quizzes  Section */
+.brain-quizzes {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 25px;
+}
+.brain-quizzes-card {
+  display: flex;
+}
+.brain-quizzes-card-1,
+.brain-quizzes-card-2,
+.brain-quizzes-card-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  flex: 1;
+}
+.brain-quizzes-card-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.brain-quizzes-card-1,
+.brain-quizzes-card-2,
+.brain-quizzes-card-3 {
+  position: relative;
+}
+
+.quizz-line {
+  position: absolute;
+  width: 1px;
+  right: 1px;
+  height: auto;
+}
+
+.brain-quizzes h3 {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151b4b;
+  margin-bottom: 34px;
+}
+.brain-quizzes-card-top img {
+  width: 180px;
+  height: 102.273px;
+  flex-shrink: 0;
+}
+.brain-quizzes-card-bottom h5 {
+  color: #151b4b;
+  font-size: 18.31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 35px;
+  height: 30px;
+}
+.brain-quizzes-card-bottom p {
+  color: #151b4b;
+  font-size: 15.31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  height: auto;
+}
+
+.brain-quizzes-card-1 h2,
+.brain-quizzes-card-2 h2,
+.brain-quizzes-card-3 h2 {
+  color: rgba(21, 22, 67, 0.2);
+  font-family: 'Exo', sans-serif;
+  font-size: 62.31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+/* Speed Games Section,Problem Solving Games,Memory Games,Attention Games*/
+.container-each-section {
+  margin-top: 108px !important;
+}
+.container-heading-para-of-each-section h2 {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #151b4b;
+}
+.container-heading-para-of-each-section p {
+  color: #151b4b;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167.8%;
+}
+.card-div-of-img-each-section {
+  background-color: rgba(50, 50, 211, 1);
+
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+.card-div-of-each-section {
+  border-radius: 17px !important;
+}
+.card-div-of-texts-each-section {
+  background-color: rgba(32, 32, 102, 1);
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.card-div-of-texts-each-section p {
+  color: #c6c6c6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.8%;
+}
+.card-div-of-right-arrow-button a {
+  position: absolute;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  bottom: 15px;
+}
+.card-section-carousel-para {
+  margin-bottom: 35px;
+}
+.owl-nav {
+  display: none !important;
+}
+.owl-dots {
+  margin-top: 20px !important;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  background-image: linear-gradient(
+    90deg,
+    #3232d3 4.05%,
+    #c568f0 92.57%
+  ) !important;
+  background-color: transparent !important;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background-color: #151b4b !important;
+}
+
+/* Our Happy Clients Section  */
+.happy-client-carousel-content {
+  position: absolute;
+}
+.happy-client-container {
+  margin-top: 50px;
+}
+.happy-client-bracket-up-1,
+.happy-client-bracket-down-2,
+.happy-client-bracket-down-1,
+.happy-client-bracket-up-2 {
+  width: 95.333px !important;
+  height: 95.332px;
+}
+.happy-client-bracket-up-1 {
+  margin-right: 13px;
+  opacity: 1;
+}
+.happy-client-bracket-down-1 {
+  display: none !important;
+  opacity: 0;
+}
+.happy-client-bracket-up-2 {
+  display: none !important;
+  opacity: 0;
+}
+.happy-client-bracket-down-2 {
+  margin-top: 251px;
+  margin-left: 13px;
+  opacity: 1;
+}
+
+.happy-client-message {
+  border-radius: 17px;
+  background: #262654;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.happy-client-message img {
+  position: absolute;
+  bottom: -14px;
+  left: 84px;
+  height: 36px;
+  width: 51px !important;
+}
+.happy-client-content {
+  position: relative;
+  height: 200px;
+}
+.happy-client-biodata {
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  left: 117px;
+  top: 29px;
+}
+.happy-client-card-border-none {
+  border: none !important;
+}
+.happy-client-biodata div {
+  margin-left: 12px;
+  margin-top: 25px;
+}
+.happy-client-biodata img {
+  width: 81px !important;
+  height: 81px;
+}
+.happy-client-biodata h4 {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151b4b;
+}
+.happy-client-biodata p {
+  color: #151b4b;
+  font-size: 16px;
+  font-family: 'Font Awesome 5 Free';
+  margin-top: -8px;
+  margin-left: 1px;
+}
+
+/* Form Section  */
+.form-section {
+  border: 1.5px solid #2d3241;
+  border-radius: 20px;
+  padding: 70px !important;
+}
+.form-section input.form-control {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0px;
+  border-color: #2c3349;
+}
+.form-section textarea.form-control {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0px;
+  border-color: #2c3349;
+}
+.form-section h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #262654;
+}
+.form-section p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #262654;
+  margin-bottom: 80px;
+}
+.form-submit-button {
+  border-radius: 126px;
+}
+
+/* Email Us Section  */
+/* .email-us-container {
+  position: relative;
+  height: 232px;
+  width: 100%;
+  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%),
+    url('../img/index/email-us/background-img.png') no-repeat;
+  background-size: cover;
+
+  
+} */
+.email-us-container {
+  position: relative;
+  height: 232px;
+  width: 100%;
+  background-image: url('../img/index/email-us/background-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 81px;
+  margin-top: 105px;
+  margin-bottom: 81px;
+}
+.email-us-container h4 {
+  color: #fff;
+  font-size: 32px;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.8%;
+}
+.email-us-container p {
+  color: #fff;
+  font-size: 16px;
+}
+.email-para {
+  margin-top: -16px;
+}
+.email-contact-button a {
+  border-radius: 126px;
+  background-color: white !important;
+  color: #3232d3 !important;
+
+  font-weight: 600;
+}
+.email-contact-button {
+  position: absolute;
+  right: 105px;
+  top: 105px;
+}
+/* responsive  */
+
+/* Brain-Quizzes-section  */
+@media (max-width: 1120px) {
+  .brain-quizzes-first-heading {
+    width: 205px;
+  }
+  .brain-quizzes-card-bottom h5 {
+    height: 50px;
+  }
+}
+@media (max-width: 990px) {
+  .brain-quizzes-card-1 h2,
+  .brain-quizzes-card-2 h2,
+  .brain-quizzes-card-3 h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .brain-quizzes-card {
+    flex-direction: column;
+  }
+  .brain-quizzes-first-heading {
+    width: auto;
+  }
+  .brain-quizzes-card-bottom h5 {
+    height: auto;
+  }
+  .quizz-line {
+    display: none;
+  }
+  .brain-quizzes-card-1,
+  .brain-quizzes-card-2,
+  .brain-quizzes-card-3 {
+    border: 1px solid #cecece;
+    border-radius: 7px;
+    margin-bottom: 27px;
+  }
+  .brain-quizzes-card-1 h2,
+  .brain-quizzes-card-2 h2,
+  .brain-quizzes-card-3 h2 {
+    top: 10px;
+  }
+  .brain-quizzes h3 {
+    font-size: 30px;
+  }
+}
+
+/* Speed Games Section,Problem Solving Games,Memory Games,Attention Games*/
+@media (max-width: 750px) {
+  .container-heading-para-of-each-section h2 {
+    font-size: 30px;
+  }
+  .card-div-of-each-section {
+    border-radius: 27px !important;
+  }
+  .card-div-of-img-each-section {
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+  }
+  .card-gap-for-smaller-width {
+    margin-bottom: 20px;
+  }
+}
+
+/* Happy Client Section  */
+@media (max-width: 992px) {
+  .happy-client-bracket-down-1 {
+    display: block !important;
+    margin-top: 202px;
+    margin-left: 13px;
+    opacity: 1;
+  }
+  .happy-client-bracket-up-2 {
+    display: block !important;
+    opacity: 1;
+  }
+  .happy-client-bracket-up-1 {
+    display: block !important;
+    opacity: 1;
+  }
+  .happy-client-bracket-down-2 {
+    display: block !important;
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .happy-client-bracket-up-1,
+  .happy-client-bracket-down-2,
+  .happy-client-bracket-down-1,
+  .happy-client-bracket-up-2 {
+    width: 61.333px !important;
+    height: 60.332px;
+  }
+  .happy-client-bracket-down-1 {
+    margin-top: 276px;
+  }
+  .happy-client-biodata {
+    left: 55px;
+  }
+  .happy-client-message img {
+    left: 22px;
+  }
+}
+
+@media (max-width: 487px) {
+  .happy-client-bracket-down-1 {
+    margin-top: 298px;
+  }
+  .happy-client-biodata {
+    left: 31px;
+  }
+  .happy-client-message img {
+    left: 9px;
+  }
+}
+/* Email Us Section  */
+@media (max-width: 992px) {
+  .email-contact-button {
+    right: 60px;
+    top: 116px;
+  }
+}
+@media (max-width: 768px) {
+  .email-contact-button {
+    bottom: 20px;
+    top: auto;
+    left: 90px;
+    right: auto;
+  }
+}
+@media (max-width: 435px) {
+  .email-us-container {
+    height: 350px;
+    padding: 30px;
+  }
+  .email-contact-button {
+    left: 46px;
+  }
+}
