@@ -454,6 +454,15 @@
     left: 9px;
   }
 }
+@media (max-width: 450px) {
+  .happy-client-bracket-up-1,
+  .happy-client-bracket-down-2,
+  .happy-client-bracket-down-1,
+  .happy-client-bracket-up-2 {
+    display: none;
+    opacity: 0;
+  }
+}
 /* Email Us Section  */
 @media (max-width: 992px) {
   .email-contact-button {
