@@ -71,8 +71,7 @@
 }
 .pricing-features-name {
   position: absolute;
-  top: 12px;
-  left: 13px;
+  top: -44px;
   font-size: 22px;
   font-weight: 500;
   line-height: 27px;
@@ -97,15 +96,10 @@
   .pricing-middle {
     margin-top: auto;
   }
-  .pricing-features-name {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5px;
-  }
+
   .pricing-and-plan-heading {
     margin-top: 71px;
     font-size: 30px;
-    margin-bottom: auto ;
+    margin-bottom: auto;
   }
 }
