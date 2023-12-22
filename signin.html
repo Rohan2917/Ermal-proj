@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/signin.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Family-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 header-container">
+          <!-- Navbar Start -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand header-logo" href="#">BQ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link nav-first-link" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Library</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">FaQ</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <div class="d-flex align-items-center">
+                  <div class="input-group d-flex">
+                    <a
+                      href="#"
+                      class="btn btn-primary header-signin d-flex align-items-center justify-content-around btn-background"
+                    >
+                      Sign In <i class="fas fa-arrow-right ml-1 mt-1"></i>
+                    </a>
+                  </div>
+                  <div class="input-group d-flex">
+                    <a
+                      href="#"
+                      class="btn btn-primary header-signup d-flex align-items-center justify-content-around btn-background"
+                    >
+                      Sign Up <i class="fas fa-arrow-right ml-1 mt-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <!-- Navbar End  -->
+          <div class="header-text-img-robot">
+            <img
+              src="assets/img/header/header-img-robot.png"
+              alt="Image-robot"
+            />
+          </div>
+          <div class="header-text-custom-positioning">
+            <div class="d-flex flex-column">
+              <h class="header-text-custom-font-1 text-white">
+                Discover what your mind can do
+              </h>
+
+              <p class="header-text-custom-font-2 text-white">
+                Exercise memory, flexibility, and more with the world’s most
+                popular brain training program.
+              </p>
+              <div class="input-group">
+                <a
+                  href="./pricing.html"
+                  class="btn btn-primary header-choose-plan-button d-flex align-items-center justify-content-around btn-background"
+                >
+                  Choose Plan <i class="fas fa-arrow-right ml-1 mt-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End  -->
+
+    <!-- SignIn Section Start  -->
+    <section class="d-flex sign-in-section">
+      <div class="col-md-6 sign-in-form-img-container">
+        <img
+          src="./assets/img/signin/Group 1358.png"
+          class="sign-in-page-form-right-image"
+        />
+
+        <div class="sign-in-page-form-container">
+          <h3>Sign In</h3>
+          <p>Please fill the below information.</p>
+          <form>
+            <div class="form-group">
+              <div class="row align-items-center">
+                <div class="col-auto sign-in-img-input-logo">
+                  <img
+                    src="./assets/img/signin/email-logo.png"
+                    alt="Email Logo"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address*"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row align-items-center">
+                <div class="col-auto sign-in-img-input-logo">
+                  <img
+                    src="./assets/img/signin/lock-password-logo.png"
+                    alt="Password Logo"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password*"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-end mt-3 sign-in-page-submit-btn"
+            >
+              <button type="submit" class="btn btn-primary btn-background">
+                Submit
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- SignIn and Plan Section End  -->
+
+    <!-- Email Us Section Start  -->
+    <section
+      class="email-us-container container btn-background text-white d-flex flex-column justify-content-center align-items-left"
+    >
+      <h4>Email Us</h4>
+      <div>
+        <p>Feel free to contact our support team</p>
+        <p class="email-para">
+          with any inquiries at support@allyourbookportal.net
+        </p>
+      </div>
+      <div class="row justify-content-end email-contact-button">
+        <a href="#" class="btn btn-primary">
+          Contact Us
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Email US Section End  -->
+
+    <!-- Footer Start  -->
+    <footer
+      class="footer d-flex justify-content-center align-items-center flex-column"
+    >
+      <div class="container footer-container text-white">
+        <div class="footer-inside-container d-flex align-items-top">
+          <div class="footer-left d-flex align-items-top">
+            <div>
+              <img
+                src="assets/img/footer/footer-site-logo.png"
+                alt="SiteLogo"
+                class="footer-logo"
+              />
+              <span class="footer-site-logo-name">Site<b>Logo</b></span>
+              <p class="footer-para">
+                High level experience in web design and development knowledge,
+                producing quality work.
+              </p>
+            </div>
+            <div class="footer-social-icon">
+              <h5 class="footer-heading">Follow Us</h5>
+              <div class="social-media-icons">
+                <a href="#"
+                  ><img
+                    src="assets/img/footer/social/facebook.png"
+                    alt="Social Media 1"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/img/footer/social/telegram.png"
+                    alt="Social Media 2"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/img/footer/social/instagram.png"
+                    alt="Social Media 3"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/img/footer/social/slack.png"
+                    alt="Social Media 4"
+                /></a>
+              </div>
+              <h5 class="footer-call-us">Call Us</h5>
+              <p class="footer-phone-num">+1 800 854-36-80</p>
+            </div>
+          </div>
+          <div class="footer-right d-flex align-items-top">
+            <div>
+              <h5 class="footer-heading">Product</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-heading">Use Cases</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Faq</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-heading">Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">FaQs</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom container d-flex flex-column justify-content-start"
+      >
+        <div class="footer-line"></div>
+        <div class="footer-all-right-reserved">
+          &copy; 2021 All Rights Reserved.
+        </div>
+        <div class="footer-last-para">
+          <ul class="list-unstyled d-flex">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Sales and Refunds</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Site Map</a></li>
+            <!-- Other quick links -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </body>
+</html>

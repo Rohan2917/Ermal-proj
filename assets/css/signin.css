@@ -1,0 +1,102 @@
+.sign-in-section {
+  justify-content: flex-end;
+  margin-top: 65px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sign-in-page-form-container {
+  width: 346px !important;
+  height: 340px;
+  position: absolute;
+  left: -340px;
+  top: 144px;
+  background: white;
+  padding: 42px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.1);
+}
+.sign-in-page-form-container h3 {
+  color: #151b4b;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.8%;
+}
+.sign-in-page-form-right-image {
+  height: 566px;
+  width: 570px;
+  margin-left: -157px;
+}
+.sign-in-form-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.sign-in-page-form-container form input {
+  border: none !important;
+  border-radius: 0px !important;
+  margin-left: -25px !important;
+}
+.sign-in-page-submit-btn button {
+  border-radius: 126px;
+}
+.form-control:focus {
+  border-color: transparent; /* Change to whatever color your input field's border is */
+  box-shadow: none; /* Remove any box shadow */
+
+  /* Add any other necessary styling */
+}
+.form-group {
+  border-bottom: 1px solid #1c274c;
+  padding-bottom: 4px;
+}
+.sign-in-img-input-logo img {
+  width: 24px;
+  height: 22px;
+}
+
+/* responsive  */
+
+@media (max-width: 1067px) {
+  .sign-in-page-form-right-image {
+    margin-left: 0;
+  }
+  .sign-in-page-form-container {
+    left: -8px;
+    top: auto;
+    bottom: -154px;
+  }
+  .sign-in-form-img-container {
+    margin-bottom: 100px;
+  }
+  .sign-in-section {
+    justify-content: center;
+    max-width: auto !important;
+  }
+  .sign-in-page-form-right-image {
+    width: auto;
+  }
+}
+@media (max-width: 582px) {
+  .sign-in-page-form-right-image {
+    width: 320px;
+    height: 400px;
+  }
+  .sign-in-form-img-container {
+    justify-content: flex-end;
+  }
+  .sign-in-page-form-container {
+    left: 14px;
+    top: auto;
+    bottom: -258px;
+  }
+  .sign-in-section {
+    margin-bottom: 220px;
+  }
+}

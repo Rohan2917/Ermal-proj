@@ -1,7 +1,3 @@
-/* button background  */
-.btn-background {
-  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%);
-}
 /* Brain Quizzes  Section */
 .brain-quizzes {
   display: flex;
@@ -288,56 +284,6 @@
   border-radius: 126px;
 }
 
-/* Email Us Section  */
-/* .email-us-container {
-  position: relative;
-  height: 232px;
-  width: 100%;
-  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%),
-    url('../img/index/email-us/background-img.png') no-repeat;
-  background-size: cover;
-
-  
-} */
-.email-us-container {
-  position: relative;
-  height: 232px;
-  width: 100%;
-  background-image: url('../img/index/email-us/background-img.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 81px;
-  margin-top: 105px;
-  margin-bottom: 81px;
-}
-.email-us-container h4 {
-  color: #fff;
-  font-size: 32px;
-  font-family: monospace;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 121.8%;
-}
-.email-us-container p {
-  color: #fff;
-  font-size: 16px;
-}
-.email-para {
-  margin-top: -16px;
-}
-.email-contact-button a {
-  border-radius: 126px;
-  background-color: white !important;
-  color: #3232d3 !important;
-
-  font-weight: 600;
-}
-.email-contact-button {
-  position: absolute;
-  right: 105px;
-  top: 105px;
-}
 /* responsive  */
 
 /* Brain-Quizzes-section  */
@@ -452,38 +398,5 @@
   }
   .happy-client-message img {
     left: 9px;
-  }
-}
-@media (max-width: 450px) {
-  .happy-client-bracket-up-1,
-  .happy-client-bracket-down-2,
-  .happy-client-bracket-down-1,
-  .happy-client-bracket-up-2 {
-    display: none;
-    opacity: 0;
-  }
-}
-/* Email Us Section  */
-@media (max-width: 992px) {
-  .email-contact-button {
-    right: 60px;
-    top: 116px;
-  }
-}
-@media (max-width: 768px) {
-  .email-contact-button {
-    bottom: 20px;
-    top: auto;
-    left: 90px;
-    right: auto;
-  }
-}
-@media (max-width: 435px) {
-  .email-us-container {
-    height: 350px;
-    padding: 30px;
-  }
-  .email-contact-button {
-    left: 46px;
   }
 }

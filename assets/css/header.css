@@ -1,5 +1,8 @@
 /* styles.css */
-
+/* button background  */
+.btn-background {
+  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%);
+}
 /* header css styling  */
 .header-container {
   position: relative;
