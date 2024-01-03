@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/signin.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          <!-- Navbar Start -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="index.html">
+              <img src="assets/img/logo-transparent.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-first-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Prices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="library.html">Library</a>
+                </li>
+              </ul>
+              <form id="loginLinksDiv" class="form-inline my-2 my-lg-0">
+                <div class="d-flex align-items-center">
+                  <div class="input-group d-flex">
+                    <a href="./login.html" class="btn btn-primary header-signin d-flex align-items-center justify-content-around btn-background">
+                      Sign In
+                      <i class="fas fa-arrow-right ml-1 mt-1"></i>
+                    </a>
+                  </div>
+                  <div class="input-group d-flex">
+                    <a href="./pricing.html" class="btn btn-primary header-signup d-flex align-items-center justify-content-around btn-background">
+                      Sign Up
+                      <i class="fas fa-arrow-right ml-1 mt-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <!-- Navbar End  -->
+          <form class="my-2 my-lg-0 d-none" id="accountProfileDropDown">
+            <h4 class="text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogout" aria-expanded="false" aria-controls="collapseLogout">
+              <span id="accountName"></span>
+              <span><i class="fa-regular fa-user mx-4"></i></span>
+            </h4>
+            <div id="collapseLogout" class="accordion-collapse collapse absolute-content" aria-labelledby="headingOne" data-bs-parent="#accountProfileDropDown">
+              <ul class="list-group ml-3" style="display: flex; flex-direction: column; align-items: flex-end">
+                <li class="p-1">
+                  <a href="index.html" id="logoutBtn">Logout</a>
+                </li>
+                <li class="p-1">
+                  <a href="accountProfile.html">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Header End  -->
+
+    <!-- SignIn Section Start  -->
+    <section class="d-flex sign-in-section">
+      <div class="col-md-6 sign-in-form-img-container">
+        <img id="sign-in-background-img" class="sign-in-page-form-right-image" />
+
+        <div class="sign-in-page-form-container">
+          <h3>Sign In</h3>
+          <p>Please fill the below information.</p>
+          <form>
+            <div id="loginMessageMessage"></div>
+            <div class="form-group">
+              <div class="row align-items-center">
+                <div class="col-auto sign-in-img-input-logo">
+                  <img src="./assets/img/signin/email-logo.svg" alt="Email Logo" />
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email Address*" id="loginEmail" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row align-items-center">
+                <div class="col-auto sign-in-img-input-logo">
+                  <img src="./assets/img/signin/lock-password-logo.svg" alt="Password Logo" />
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Password*" id="loginPassword" />
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-3 sign-in-page-submit-btn">
+              <button id="loginBtn" type="submit" class="btn btn-primary btn-background">
+                Submit
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- SignIn and Plan Section End  -->
+
+    <!-- Footer Start  -->
+    <footer class="footer d-flex justify-content-center align-items-center flex-column">
+      <div class="container footer-container text-white">
+        <div class="footer-inside-container d-flex align-items-top">
+          <div class="footer-right">
+            <div>
+              <a href="index.html">
+                <img src="assets/img/logo-transparent.svg" alt="logo" />
+              </a>
+            </div>
+            <div>
+              <h5 class="footer-heading">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="terms_and_conditions.html">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-heading">Company Details</h5>
+              <ul class="list-unstyled">
+                <li>
+                  Company:
+                  <span id="companyName"></span>
+                </li>
+                <li>
+                  Company Number:
+                  <span id="companyNumber"></span>
+                </li>
+                <li>
+                  Adress:
+                  <span id="companyAddress"></span>
+                </li>
+                <li>
+                  Email:
+                  <span id="siteEmail"></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img src="assets/img/common/paytype/mastercard.svg" alt="SiteLogo" class="footer-logo" />
+              <img src="assets/img/common/paytype/sepa.svg" alt="SiteLogo" class="footer-logo" />
+              <img src="assets/img/common/paytype/visa.svg" alt="SiteLogo" class="footer-logo" />
+            </div>
+          </div>
+          <div class="footer-right-small-width">
+            <div class="footer-top-part">
+              <div>
+                <a href="index.html">
+                  <img src="assets/img/logo-transparent.svg" alt="logo" />
+                </a>
+              </div>
+            </div>
+            <div class="fotter-card-img">
+              <img src="assets/img/common/paytype/mastercard.svg" alt="SiteLogo" class="footer-logo" />
+              <img src="assets/img/common/paytype/sepa.svg" alt="SiteLogo" class="footer-logo" />
+              <img src="assets/img/common/paytype/visa.svg" alt="SiteLogo" class="footer-logo" />
+            </div>
+            <div class="footer-bottom-part">
+              <div class="fotter-small-width-link">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="library.html">Library</a></li>
+                  <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                  <li><a href="terms_and_conditions.html">Terms &amp; Conditions</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="footer-heading">Company Details</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Company:
+                    <span id="companyNameSmallWidth"></span>
+                  </li>
+                  <li>
+                    Company Number:
+                    <span id="companyNumberSmallWidth"></span>
+                  </li>
+                  <li>
+                    Adress:
+                    <span id="companyAddressSmallWidth"></span>
+                  </li>
+                  <li>
+                    Email:
+                    <span id="siteEmailSmallWidth"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container d-flex flex-column justify-content-start">
+        <div class="footer-last-para">
+          <ul class="list-unstyled d-flex flex-column align-items-end">
+            <div class="footer-line"></div>
+            <div class="footer-all-right-reserved">&copy; 2023 All Rights Reserved.</div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- js fiels  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="fetch-var-root-css-to-html/web-name.js"></script>
+    <script src="fetch-var-root-css-to-html/signin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5eed77e9a.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/api/apiSite.js"></script>
+    <script src="./assets/js/api/apiAccount.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

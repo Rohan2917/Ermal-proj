@@ -1,0 +1,282 @@
+@import url('root.css');
+.header-container {
+  height: 98px !important;
+  color: white;
+  background: unset;
+  width: 100% !important;
+}
+#accountProfileDropDown {
+  color: var(--navbar-private-route-admin-name-color) !important;
+}
+nav ul li a {
+  color: var(--navbar-private-route-link-color) !important;
+}
+
+body {
+  background: var(--checkout-background-color);
+}
+
+#subscribeSection {
+  padding: 50px 0;
+  color: #abb497;
+}
+.checkout-form {
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.checkout-heading {
+  background: var(--checkout-order-form-heading-color);
+  padding: 15px;
+  color: white;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: black;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #afaaaa;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.credit-cards {
+  margin-top: 30px;
+}
+
+.credit-cards img {
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+.col p {
+  margin-bottom: 10px;
+  color: #777;
+}
+.product-img {
+  transform: rotate(360deg);
+  height: 13px;
+  top: -11px;
+  right: 37px;
+}
+.product-img img {
+  height: 85px;
+  margin-left: -11px;
+  margin-right: 10px;
+  margin-top: -14px;
+}
+
+.SubscriptionInformation {
+  padding: 30px;
+  border-radius: 5px;
+  color: var(--checkout-subscription-information-text-color);
+  margin-top: 126px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #8f8f8f;
+  background-color: var(--ea-secondary-color);
+  margin-bottom: 120px;
+}
+.about-subscription {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 17px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #c2aeae !important;
+}
+.about-subscription-1 {
+  font-size: 14px;
+}
+.SubscriptionInformation h3 {
+  color: var(--checkout-subscription-information-heading-text-color);
+  padding-bottom: 23px;
+  border-bottom: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+#subscriptionTitle {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#price {
+  font-weight: bold;
+}
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+.circle {
+  width: 33px;
+  height: 33px;
+  /* padding: 20px; */
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #5f4498;
+}
+
+.current-section-active {
+  animation: rotateBorder 1s infinite linear;
+  color: #121f61;
+  background-color: #c2a7b0;
+  animation: rotateBorder 3s infinite linear;
+  border: 3px solid #5f4498;
+}
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.line {
+  flex: 1;
+  height: 2px;
+  width: 20px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.current-section-completed {
+  background-color: #0f9ce7;
+}
+.progress-bar i {
+  color: #282553;
+}
+
+.order-now-heading {
+  margin-bottom: 48px;
+  color: #28064a;
+}
+input {
+  /* background: #adc8ca !important; */
+  color: white important;
+}
+label {
+  color: #190b70 !important;
+}
+.next,
+.prev {
+  width: 95px;
+  height: 35px;
+  border-radius: 5px;
+  background: #55858e;
+  color: #cff091;
+}
+.formDiv h3 {
+  color: #000000;
+  font-size: 20px;
+}
+.fix-height-of-logo {
+  height: 90px;
+}
+.fix-height-of-logo td {
+  height: 90px;
+}
+.form-check a {
+  color: var(--checkout-order-form-heading-color);
+}
+#registerAccount {
+  border: 1px solid #c8b3b3;
+  /* width: 100%; */
+  padding: 16px;
+  color: white;
+  padding-left: 60px;
+  background: black;
+  padding-right: 60px;
+  margin-top: -21px;
+}
+.last-para-checkout-page {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27px;
+}
+.last-para-checkout-page p {
+  color: var(--ea-primary-color);
+  font-size: 8px;
+  font-weight: 600;
+}
+.para-payment-info {
+  color: #190b70;
+}
+/* responsive  */
+@media (max-width: 990px) {
+  .SubscriptionInformation {
+    padding: 0px;
+  }
+  .order-now-heading {
+    margin-top: 104px;
+  }
+  .product-img {
+    transform: rotate(-90deg);
+  }
+  .product-img img {
+    height: 85px;
+    margin-left: 10px;
+    margin-right: -78px;
+    margin-top: -8px;
+  }
+  .fix-height-of-logo {
+    height: auto;
+  }
+  .fix-height-of-logo td {
+    height: auto;
+  }
+  .SubscriptionInformation {
+    margin-top: 4px;
+  }
+
+  .checkout-form {
+    margin-top: -78px;
+  }
+}

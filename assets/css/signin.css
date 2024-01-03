@@ -1,3 +1,12 @@
+@import url('root.css');
+body {
+  background: var(--index-container-body-background-color);
+}
+.header-container {
+  height: 98px !important;
+  color: white;
+  width: 100% !important;
+}
 .sign-in-section {
   justify-content: flex-end;
   margin-top: 65px;
@@ -69,11 +78,11 @@
   }
   .sign-in-page-form-container {
     left: -8px;
-    top: auto;
-    bottom: -154px;
+    top: 100px;
   }
   .sign-in-form-img-container {
     margin-bottom: 100px;
+    justify-content: center;
   }
   .sign-in-section {
     justify-content: center;
@@ -93,10 +102,6 @@
   }
   .sign-in-page-form-container {
     left: 14px;
-    top: auto;
-    bottom: -258px;
-  }
-  .sign-in-section {
-    margin-bottom: 220px;
+    top: 32px;
   }
 }

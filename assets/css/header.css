@@ -1,18 +1,27 @@
-/* styles.css */
+@import url('root.css');
+
 /* button background  */
 .btn-background {
-  background: linear-gradient(90deg, #3232d3 4.05%, #c568f0 92.57%);
+  background: var(--btn-background-color);
+  border: var(--btn-background-color);
+  color: var(--btn-text-color);
 }
 /* header css styling  */
+nav ul li a {
+  color: var(--navbar-link-color) !important;
+}
 .header-container {
   position: relative;
   height: 876px;
   font-family: 'Roboto', sans-serif;
-  background-image: url('../img/header/header-background.png');
+  background: var(--header-background-color);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
+}
+.header-index-text-container {
+  color: var(--header-index-text-container-color);
 }
 .header-container::after {
   content: '';
@@ -21,16 +30,16 @@
 }
 
 .header-logo {
-  font-size: 37px;
+  font-size: 37px !important;
   font-weight: 500;
   line-height: 24px;
   margin-left: 32px;
-  font-family: 'LEMON MILK';
+  font-family: var(--header-logo-font-family);
   margin-top: -10px;
 }
 
 .header-navbar .btn {
-  color: white;
+  color: var(--btn-text-color);
 }
 
 .header-signin {
@@ -58,7 +67,7 @@
   top: 238px;
 }
 .header-text-custom-font-1 {
-  font-family: 'Exo', sans-serif;
+  font-family: var(--header-heading-font-family);
   font-size: 55px;
   font-weight: 900;
   line-height: 70px;
@@ -68,7 +77,7 @@
 }
 
 .header-text-custom-font-2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--header-para-font-family);
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -94,6 +103,29 @@
   position: absolute;
   display: none;
 }
+#accountProfileDropDown {
+  position: absolute;
+  right: 0;
+  color: var(--navbar-admin-name-color);
+  top: 35px;
+}
+#accountProfileDropDown ul li {
+  list-style: none;
+  /* border: 1px solid red; */
+  margin-right: 14px;
+  width: 72px;
+  text-align: center;
+  background-color: #121b4f;
+  margin-top: 1px;
+}
+#accountProfileDropDown ul li a {
+  text-decoration: none;
+  color: #e0b9d9;
+}
+#accountProfileDropDown ul li a:hover {
+  color: white;
+}
+
 /* responsive  */
 @media (min-width: 1400px) {
   .header-container {
@@ -104,11 +136,11 @@
   .header-signin {
     width: 98px;
     height: 33.126px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .header-signup {
     width: 98px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 33.126px;
   }
   .header-choose-plan-button {
@@ -143,7 +175,7 @@
 }
 @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: #1b2247 !important;
+    background: var(--header-navbar-collapse-for-small-width-background-color) !important;
     width: 100%;
     border-radius: 3px;
     padding: 38px;
@@ -205,7 +237,7 @@
     line-height: 39px;
   }
   .header-logo {
-    margin-left: -9px;
+    margin-left: 12px !important;
   }
   .header-container {
     height: 620px;
@@ -217,5 +249,13 @@
   }
   .header-text-custom-font-1 {
     width: 289px;
+  }
+}
+@media (max-width: 990px) {
+  #accountProfileDropDown {
+    right: 0;
+    top: 35px;
+    left: 50%; /* Position the element to the middle of its parent */
+    transform: translateX(-50%); /* Adjust to center the element precisely */
   }
 }

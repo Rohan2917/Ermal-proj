@@ -1,11 +1,11 @@
 /*  Custom Styles */
-
+@import url('root.css');
 /* Your Custom Styles */
 .footer {
   position: relative;
   height: 549.58px;
   font-family: 'Roboto', sans-serif;
-  background-image: url('../img/footer/footer-background-img.png');
+  background-image: var(--footer-background-img);
   background-size: cover;
   position: relative;
 }
@@ -14,62 +14,38 @@
   /* top: 189px; */
   bottom: 100px;
 }
-.footer-logo {
-  height: 26px;
-  height: 26px;
-  margin-top: -6px;
-  margin-right: 8px;
-}
 
 .footer-site-logo-name {
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
+  color: var(--footer-text-color);
+  font-family: var(--footer-site-logo-name-font-family);
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -7px;
 }
-.footer-para {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 24px;
-  width: 320px;
-}
+
 .footer-line {
-  width: 352px;
+  width: 100%;
   height: 1px;
-  background: #a9a9e8;
+  background: var(--footer-line-background-color);
 }
-.footer-phone-num {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 4px;
-}
+
 .footer-all-right-reserved {
   display: flex;
   flex-shrink: 0;
   margin-top: 24px;
-  color: var(--Cold-Grey-white, #fff);
-  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   font-weight: lighter;
-  color: #a2c1cb;
+  margin-left: 125px;
+  color: var(--footer-all-right-reserved-color);
 }
 
 .footer ul li a {
-  color: white;
-  font-family: 'Roboto', sans-serif;
+  color: var(--footer-text-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -79,169 +55,96 @@
 }
 .footer ul li {
   margin-bottom: 15px;
+  color: var(--footer-text-color);
 }
 .footer-inside-container ul li:first-child {
   margin-top: 24px;
 }
+.footer-inside-container ul li span {
+  color: var(--footer-text-color);
+  font-weight: 700;
+  font-size: 15px;
+}
 .footer-heading {
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
 }
-.footer-social-icon div a img {
-  margin-right: 7px;
-  width: 24px;
-  height: 24px;
-  margin-top: 5px;
-}
-.footer-social-icon div {
-  margin-top: 15px;
-}
-.footer-call-us {
-  color: #fff;
-  margin-top: 32px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.footer-left {
-  justify-content: space-between;
-  width: 100%;
-}
+
 .footer-right {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
 }
 .footer-bottom {
   position: absolute;
-  bottom: 70px;
+  bottom: 14px;
 }
 .footer-bottom div ul li {
   margin-top: 63px;
-  font-family: 'Roboto', sans-serif;
   margin-right: 25px;
-  color: var(--Cold-Grey-white, #fff);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-/* Email Us Section  */
-.email-us-container {
-  position: relative;
-  height: 232px;
-  width: 100%;
-  background-image: url('../img/index/email-us/background-img.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 81px;
-  margin-top: 105px;
-  margin-bottom: 81px;
-}
-.email-us-container h4 {
-  color: #fff;
-  font-size: 32px;
-  font-family: monospace;
+.footer-bottom div ul li a {
+  margin-top: 63px;
+  margin-right: 25px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 121.8%;
+  font-weight: 400;
+  line-height: normal;
 }
-.email-us-container p {
-  color: #fff;
-  font-size: 16px;
+.footer-right-small-width {
+  display: none;
 }
-.email-para {
-  margin-top: -16px;
-}
-.email-contact-button a {
-  border-radius: 126px;
-  background-color: white !important;
-  color: #3232d3 !important;
-
-  font-weight: 600;
-}
-.email-contact-button {
-  position: absolute;
-  right: 105px;
-  top: 105px;
-}
-
 /* responsive  */
-@media (max-width: 1202px) {
-  .footer-line {
-    width: 300px;
-  }
-}
-@media (max-width: 993px) {
-  .footer-inside-container {
-    flex-direction: column;
-  }
-  .footer-left {
-    justify-content: space-between;
+@media screen and (max-width: 770px) {
+  .footer {
+    height: 656px;
   }
   .footer-right {
-    justify-content: space-between;
-    margin-top: 20px;
+    display: none;
   }
-  .footer {
-    height: 720px;
-  }
-  .footer-bottom {
-    bottom: 16px;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer {
-    height: 800px;
-  }
-  .footer-inside-container {
+  .footer-right-small-width {
+    display: flex;
     flex-direction: column;
+    width: 100%;
   }
-  .footer-left {
-    flex-direction: column;
-    justify-content: space-evenly;
+  .footer-top-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
   }
-}
-@media (max-width: 550px) {
-  .footer-last-para ul {
+  .footer-bottom-part {
+    display: flex;
+    margin-top: 41px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer-container {
+    bottom: 72px;
+  }
+  .fotter-card-img {
+    margin-top: 27px;
+  }
+  .fotter-small-width-link {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .fotter-small-width-link ul {
+    display: flex;
     justify-content: space-between;
-  }
-  .footer-bottom div ul li {
-    margin-right: 0;
-  }
-  .footer-line {
-    width: 268px;
-  }
-}
-
-/* Email Us Section  */
-@media (max-width: 992px) {
-  .email-contact-button {
-    right: 60px;
-    top: 116px;
-  }
-}
-@media (max-width: 768px) {
-  .email-contact-button {
-    bottom: 20px;
-    top: auto;
-    left: 90px;
-    right: auto;
-  }
-}
-@media (max-width: 435px) {
-  .email-us-container {
-    height: 350px;
-    padding: 30px;
-  }
-  .email-contact-button {
-    left: 46px;
+    align-items: baseline;
+    margin-top: -19px;
+    margin-bottom: -6px;
   }
 }

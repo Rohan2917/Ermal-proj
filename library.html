@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link rel="stylesheet" href="./assets/css/loading-icon.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Library Demo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/ico.svg">
+</head>
+
+<body class="library-body">
+
+
+
+    <!-- Menu Toggle -->
+    <button class="btn d-block px-4 d-lg-none canvas-toggle ms-auto mt-3 me-3" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        MENU
+    </button>
+    <!-- Menu Toggle -->
+
+    <!-- Menu -->
+    <div>
+        <div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="index.html">
+                    <img src="assets/img/logo-transparent.svg" alt="logo" class="w-75 d-block mx-auto">
+                </a>
+            </div>
+            <div class="offcanvas-body position-relative px-0">
+                <div class="library-menu">
+                    <p class="fs-5 mb-0 pb-0 ps-3 ea-menu-font" >MENU</p>
+                    <ul class="ps-0 pt-0">
+                        <li
+                            class="library-menu-item d-flex justify-content-start align-items-center m-0 ps-0 w-100 mt-1">
+                            <a href="index.html" class="ps-3 w-100">
+                                <i class="bi bi-house-door-fill m-0 me-2 fs-5"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li
+                            class="library-menu-item d-flex justify-content-start align-items-center m-0 ps-0 w-100 mt-1">
+                            <a href="accountProfile.html" class="ps-3 w-100">
+                                <i class="bi bi-person-circle fs-5 p-0 me-2"></i>
+                                My Account
+                            </a>
+                        </li>
+                        <li
+                            class="library-menu-item d-flex justify-content-start align-items-center m-0 ps-0 w-100 mt-1">
+                            <a href="index.html" class="ps-3 w-100" id="libraryLogout">
+                                <i class="bi bi-box-arrow-left fs-5 p-0 me-2"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="library-categories">
+                    <p class="fs-5 mb-0 ps-2 ea-menu-font" >CATEGORIES</p>
+                    <ul class="ps-2" id="menu-categories">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu -->
+
+    <!-- Categories -->
+    <div class="loadingio-spinner-spinner-igmw6qt6zbo d-none" id="loading-icon">
+        <div class="ldio-g6xq13zb388">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <section class="library-section ea-mt-50">
+        <div class="categories-container container" style="min-height: 80vh;">
+
+        </div>
+    </section>
+   
+    <script src="fetch-var-root-css-to-html/web-name.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/fetch-var-root-css-to-html/content.js"></script>
+    <script src="./assets/js/fetch-var-root-css-to-html/web-name.js"></script> -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/api/apiBooks.js"></script>
+    <script src="assets/js/api/apiSite.js"></script>
+    <script src="assets/js/api/apiAccount.js"></script>
+    <script src="assets/js/books.js"></script>
+    <script src="assets/js/mockedData/mockData.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c5eed77e9a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

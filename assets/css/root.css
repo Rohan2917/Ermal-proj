@@ -1,0 +1,88 @@
+:root {
+  /* Name of this website  */
+  --website-name: 'PlayPlexus';
+
+  /* START: This is the all color combinations available in the website  */
+  --ea-primary-color: linear-gradient(207deg, #b80303 17.26%, #000 63.16%);
+  --ea-secondary-color: black;
+  --ea-third-color: var(--ea-primary-color);
+  --ea-fourth-color: black;
+  /* END: This is the end of all color combinations available in the website  */
+
+  /*  buttons  */
+  --btn-background-color: var(--ea-primary-color);
+  --btn-text-color: white;
+
+  /* navbar variable  */
+  --navbar-link-color: white;
+  --navbar-private-route-link-color: white;
+  --navbar-admin-name-color: white;
+  --navbar-private-route-admin-name-color: white;
+
+  /* header variables  */
+  --header-background-color: var(--ea-primary-color);
+  --header-heading-font-family: 'Exo', sans-serif;
+  --header-para-font-family: 'Montserrat', sans-serif;
+  --header-logo-font-family: 'LEMON MILK';
+  --header-navbar-collapse-for-small-width-background-color: var(--ea-primary-color);
+  --header-index-text-container-color: white;
+  /* Footer Variables  */
+  --footer-background-img: url('../img/footer/footer-background.svg');
+  --footer-site-logo-name-font-family: 'LEMON MILK';
+  --footer-line-background-color: #a9a9e8;
+  --footer-all-right-reserved-color: #a2c1cb;
+  --footer-text-color: white;
+
+  /* index Page variable  */
+  --index-container-body-background-color: black;
+  --brain-quizzes-text-color: white;
+  --brain-quizzes-numbers-color: rgb(152 152 156 / 20%);
+  --index-container-heading-of-each-section-font-family: 'Exo', sans-serif;
+  --index-container-heading-of-each-section-color: white;
+  --index-speed-games-card-1-background-img: url('./assets/img/index/speed-games/card-1.svg');
+  --index-speed-games-card-2-background-img: url('./assets/img/index/speed-games/card-2.svg');
+  --index-speed-games-card-3-background-img: url('./assets/img/index/speed-games/card-3.svg');
+  --index-problem-solving-games-card-1-background-img: url('./assets/img/index/problem-solving-games/card-1.svg');
+  --index-problem-solving-games-card-2-background-img: url('./assets/img/index/problem-solving-games/card-2.svg');
+  --index-problem-solving-games-card-3-background-img: url('./assets/img/index/problem-solving-games/card-3.svg');
+  --index-memory-games-card-1-background-img: url('./assets/img/index/memory-games/card-1.svg');
+  --index-memory-games-card-2-background-img: url('./assets/img/index/memory-games/card-2.svg');
+  --index-memory-games-card-3-background-img: url('./assets/img/index/memory-games/card-3.svg');
+  --index-attention-games-card-1-background-img: url('./assets/img/index/attention-games/card-1.svg');
+  --index-attention-games-card-2-background-img: url('./assets/img/index/attention-games/card-2.svg');
+  --index-attention-games-card-3-background-img: url('./assets/img/index/attention-games/card-3.svg');
+  --index-container-card-background-img-color: #0d0d0d;
+  --index-container-card-text-background-color: rgba(32, 32, 102, 1);
+  --index-container-card-text-heading-color: white;
+  --index-container-card-text-para-color: #c6c6c6;
+  --index-container-card-below-circular-button-1: #aeacac;
+  --index-container-card-below-circular-button-2: var(--ea-primary-color);
+  --index-container-card-below-circular-button-3: #aeacac;
+  --index-happy-client-background-color: linear-gradient(90deg, #d33232 4.05%, #b60000 92.57%);
+  --index-happy-client-biodata-heading-color: white;
+  --index-happy-client-biodata-para-color: white;
+  --index-happy-client-biodata-para-font-family: 'Font Awesome 5 Free';
+  --index-box-background-color: #0d0d0d;
+  --happy-cliend-background-color: unset;
+
+  /* Pricing-page variable */
+  --pricing-card-color: white;
+  --pricing-container-heading-color: white;
+  --pricing-card-text-color: black;
+  --pricing-semi-circular-background-color: linear-gradient(90deg, #d33232 4.05%, #b60000 92.57%);
+  --pricing-this-feature-available-color: #847a7a;
+  --pricing-this-feature-not-available-color: #b3b3b3;
+  --pricing-semi-circular-text-color: white;
+  --pricing-card-heading-color: black;
+  --pricing-card-choose-plan-button-background: linear-gradient(90deg, #d33232 4.05%, #b60000 92.57%);
+  --pricing-card-choose-plan-button-text-color: white;
+
+  /* sign-In page varible  */
+  --sign-in-container-background-img: url('./assets/img/signin/sign-in-background-img.svg');
+
+  /* chekout page variable  */
+  --checkout-background-color: var(--ea-third-color);
+  --checkout-order-form-heading-color: var(--ea-primary-color);
+  --checkout-subscription-information-heading-text-color: white;
+  --checkout-subscription-information-text-color: white;
+}

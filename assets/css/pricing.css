@@ -1,4 +1,13 @@
+@import url('root.css');
 /* Pricing and Plans Section  */
+body {
+  background: var(--index-container-body-background-color);
+}
+.header-container {
+  height: 98px !important;
+  color: white;
+  width: 100% !important;
+}
 .pricing-and-plan-heading {
   margin-top: 67px;
   margin-bottom: 111px;
@@ -8,7 +17,7 @@
   line-height: 65px;
   letter-spacing: 0em;
   text-align: center;
-  color: #151b4b;
+  color: var(--pricing-container-heading-color);
 }
 .pricing-choose-plan-button a {
   border-radius: 126px;
@@ -21,6 +30,7 @@
   border: none !important;
   box-shadow: 0px 1px 2px 0px #d2d1d1;
   border-radius: 20px 20px 5px 5px !important;
+  position: relative;
 }
 .pricing-card h5 {
   font-size: 18px;
@@ -28,15 +38,21 @@
   line-height: 29px;
   letter-spacing: 0em;
   text-align: center;
+  columns: var(--pricing-card-heading-color);
 }
 .pricing-card ul li {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: 0em;
-  color: #847a7a;
+  color: var(--pricing-this-feature-available-color);
 }
 .pricing-card ul li img {
   margin-right: 10px;
+}
+.pricing-choose-plan-button a {
+  background: var(--pricing-card-choose-plan-button-background);
+  color: var(--pricing-card-choose-plan-button-text-color);
+  border-radius: 126px;
 }
 .pricing-card ul li {
   margin-bottom: 18px;
@@ -44,7 +60,7 @@
   padding-bottom: 27px;
 }
 .pricing-this-feature-not-available {
-  color: #b3b3b3 !important;
+  color: var(--pricing-this-feature-not-available-color) !important;
 }
 .pricing-under-this-plan {
   height: 220px;
@@ -57,13 +73,14 @@
   position: relative;
   font-size: 50px;
   font-weight: 700;
+  color: var(--pricing-semi-circular-text-color);
 }
 .pricing-month {
   font-size: 25px;
   font-weight: 400;
 }
 .pricing-euro-symbol {
-  position: absolute;
+  /* position: absolute; */
   top: -9px;
   left: -13px;
   font-size: 45px;
@@ -81,7 +98,20 @@
 .pricing-middle {
   margin-top: -56px;
 }
-
+figure {
+  margin: 0 0 1rem;
+  position: absolute;
+  left: 10px;
+  top: -23px;
+  height: 43px;
+}
+figure img {
+  height: 92px !important;
+  transform: rotate(237deg);
+}
+.semi-circular-background {
+  background: var(--pricing-semi-circular-background-color);
+}
 /* responsive  */
 @media (max-width: 768px) {
   .pricing-under-this-plan {
@@ -101,5 +131,15 @@
     margin-top: 71px;
     font-size: 30px;
     margin-bottom: auto;
+  }
+  figure {
+    margin: 0 0 1rem;
+    position: absolute;
+    left: 36px;
+    top: -32px;
+    height: 43px;
+  }
+  figure img {
+    transform: rotate(-90deg);
   }
 }

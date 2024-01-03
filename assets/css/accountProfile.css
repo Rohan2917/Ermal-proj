@@ -1,0 +1,139 @@
+@import url('root.css');
+.header-container {
+  height: 98px !important;
+  color: white;
+  background: unset;
+  width: 100% !important;
+}
+#accountProfileDropDown {
+  color: var(--navbar-private-route-admin-name-color) !important;
+}
+nav ul li a {
+  color: var(--navbar-private-route-link-color) !important;
+}
+body {
+  background: var(--ea-third-color);
+}
+td,
+th {
+  padding: 20px;
+  border-top: none !important;
+}
+tr {
+  border-bottom: 1px solid var(--ea-primary-color);
+}
+table {
+  width: 100%;
+  color: white !important;
+}
+.payment-table-div {
+  width: 100%;
+  overflow-x: auto;
+}
+.active {
+  background: var(--ea-primary-color) !important;
+  color: white !important;
+}
+.table-responsive {
+  width: 100%; /* Adjust the width as needed */
+}
+.accountOptions {
+  list-style-type: none;
+  padding: 0;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: var(--ea-secondary-color);
+}
+.ul-first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.accountOptions a {
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: white;
+  background: var(--ea-secondary-color);
+  border-bottom: 1px solid;
+}
+
+.accountOptions li {
+  text-decoration: none;
+  border-bottom: 1px solid var(--ea-primary-color);
+  display: block;
+  padding: 8px 12px;
+}
+
+.accountOptions li:hover {
+  background-color: #bed7fb; /* Adjust hover and active background color */
+  color: #000; /* Adjust hover and active text color */
+}
+#mySubscription h2 {
+  margin-top: 31px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 23px;
+  margin-left: 18px;
+}
+.profile-account-save-button {
+  background: var(--btn-background-color);
+  border-radius: 126px;
+  color: white;
+}
+/* Form labels */
+label {
+  color: white;
+}
+
+/* Form input fields */
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #4f5c9b;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+.mySubscriptionContent {
+  background-color: var(--ea-secondary-color);
+  border-radius: 10px;
+}
+#accountDetails {
+  background: var(--ea-secondary-color);
+  padding: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.accountDetailsForm {
+  background: var(--ea-primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+.save-change-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* responsive  */
+
+@media screen and (max-width: 990px) {
+  .accountOptions {
+    margin-top: -43px;
+  }
+  .accountOption-coloum {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
